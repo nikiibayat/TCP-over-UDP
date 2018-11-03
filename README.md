@@ -1,5 +1,5 @@
 # TCP over UDP
-This project's objective is to help implementing a TCP protocol based on UDP **for educational purposes** <br />
+This project's objective is to help implementing a TCP protocol based on UDP **for educational purposes**.<br />
 
 ## Background
 TCP and UDP are both protocols,built on top of the Internet Protocol, used for sending bits of data known as packets.<br />
