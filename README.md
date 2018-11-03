@@ -9,11 +9,9 @@ This project's objective is to help implementing a TCP protocol based on UDP for
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-This code is provided for educational purposes.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project is implemented in JAVA, therefore, in order to run the codes, you need to have JAVA installed on your computer.
 
 ```
 Give examples
