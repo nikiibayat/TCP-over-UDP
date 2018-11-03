@@ -1,10 +1,14 @@
 # TCP over UDP
 
-هدف این پروژه آشنایی دانشجویان با پروتکل
+TCP and UDP are both protocols,built on top of the Internet Protocol, used for sending bits of data known as packets.
+TCP, the most common protocol on the Internet, stands for Transmission Control Protocol. TCP guarantees in-order transmission of packets and makes sure the recipient recieves all the packets, in other words, TCP guarantees reliability, there is no lost or corrupted packets in TCP transmission.
+On the other hand, 
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+This code is provided for educational purposes.
 
 ### Prerequisites
 
