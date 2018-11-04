@@ -44,6 +44,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
+* [Java8] (https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html) - development platform
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 
