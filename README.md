@@ -11,14 +11,14 @@ This project will help implementing a TCP protocol using UDP transmission, stude
 ### Enhanced Datagram Socket
 Enhanced Datagram Socket extends JAVA DatagramSocket, therefore, it aquires all the properties and behaviours of its parent. Students must pay attention that they can use all the methods and fields of DatagramSocket that is inherited to Enhanced Datagram Socket, however, they can never use DatagramSocket itself for transmitting data.<br />
 In EnhancedDatagramSocket.java the default value of payload limit, loss rate, delay and the sampling period of sent bytes are adjustable in order to simulate the characteristics of an actual link. Enhanced Datagram Socket sends packets of data based on the loss rate and the delay specified in this file. Simultanously, it plots the bytes of data sent per milliseconds, this way the actual transmission of data can be assessed.
-![BytesPerTime](https://github.com/nikiibayat/TCP-over-UDP/images/BytesPerTime.png "BytesPerTime")
+![BytesPerTime](https://github.com/nikiibayat/TCP-over-UDP/blob/master/images/BytesPerTime.png?raw=true "BytesPerTime")
 
 ### TCP Socket
 Students are asked to complete this class in TCPSocketImpl.java, there are five methods in TCPSocketImpl that students have to complete: send, receive, close, getSSThreshold and getWindowSize.<br />
 the **send** method, sends the file that its address is recieved in input to the destination, and **recieve** method, will recieve data and write it to the input address.<br />
 send and receive should be implemented based on the automatic repeat-request (ARQ) protocol assigned to students by their teaching assistant, for example, if students are asked to implement Go-Back-N protocol, the send and recieve in both TCP Socket and TCP Server Socket should be based on Go-Back-N. For implementing these protocols you can use this link [Selective Repeat / Go Back N](http://www.ccs-labs.org/teaching/rn/animations/gbn_sr/). The reliability of the implemented TCP will be validated by increasing the loss rate during transmission.<br />
 **getWindowSize** should return the size of current window and **getSSThreshold** should return current value of slow start threshold. **onWindowChange** should be called whenever window size or ssthreshold changes. these three methods will draw slow start and window size per time which helps in assessing congestion control implementation.
-![CongestionWindow](https://github.com/nikiibayat/TCP-over-UDP/images/CongestionWindow.png "CongestionWindow")
+![CongestionWindow](https://github.com/nikiibayat/TCP-over-UDP/blob/master/images/CongestionWindow.png?raw=true "CongestionWindow")
 the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented here.
 
 ### TCP Server Socket
