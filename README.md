@@ -14,6 +14,7 @@ In EnhancedDatagramSocket.java the default value of payload limit, loss rate, de
 
 ### TCP Socket
 Students are asked to complete this class in TCPSocketImpl.java, there are five methods in TCPSocketImpl that students have to complete: send, receive, close, getSSThreshold and getWindowSize.<br />
+the ** send ** method, sends the file that its address is recieved in input to the destination, and ** recieve ** method, will recieve data and write it to the input address.<br />
 send and receive should be implemented based on the automatic repeat-request (ARQ) protocol assigned to students by their teaching assistant, for example, if students are asked to implement Go-Back-N protocol, the send and recieve in both TCP Socket and TCP Server Socket should be based on Go-Back-N. For implementing these protocols you can use this link [Selective Repeat / Go Back N](http://www.ccs-labs.org/teaching/rn/animations/gbn_sr/). The reliability of the implemented TCP will be validated by increasing the loss rate during transmission.<br />
 
 
