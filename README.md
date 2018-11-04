@@ -21,7 +21,7 @@ the **close** method should be implemented as specified in each semester's proje
 
 ### TCP Server Socket
 Students are asked to complete this class in TCPServerSocketImpl.java, there are two methods in TCPServerSocketImpl that students have to complete: accept and close.<br />
-Server waits on the assigned port for a client to send syn packet, handshake should be implemented in accept method and **must** be reliable. If asked on the project instructions, then the server should be able to support Multiplexing/Demultiplexing.<br />
+Server waits on the assigned port for a client to send syn packet, handshake should be implemented in accept method and **must** be reliable, also implementing tcp flags for this part is mandatory. If asked on the project instructions, then the server should be able to support Multiplexing and Demultiplexing.<br />
 the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented here.
 
 ## Getting Started
@@ -36,31 +36,26 @@ project-jdk-type="JavaSDK" <br />
 
 ### Running the tests
 
-A step by step series of examples that tell you how to get a development env running
+in order to test your tcp send/recieve you can use Sender.java and Reciever.java. An example usage of these classes is implemented for you. you can use "1MB.txt" in this repository to test your code, however you should notice that examiners might use other files or default values and your code is expected to work in any case. <br />
 
-Say what the step will be
+follow the instructions below:<br />
 
+in Sender.java:
 ```
-Give the example
+tcpSocket.send("the path in your computer/1MB.txt");
 ```
-
-And repeat
-
+in Receiver.java:
 ```
-until finished
+tcpSocket.receive("the path in your computer");
 ```
+It is obvious that the server must be running before the client starts establishing the connection, therefore consider this when executing your code.<br />
+First of all, try with loss rate = 0, if the file is received completely, then slightly increase the loss rate  (for example, loss rate = 0.1) this will examine the reliability of your transmission. If your transmission is fast, then you could try increasing the default value of delay.<br />
 
-End with an example of getting some data out of the system or using it for a little demo
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 * [Java8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html/) - Development Platform
-* [Maven](https://maven.apache.org/) - Dependency Management
 
 
 ## Authors
