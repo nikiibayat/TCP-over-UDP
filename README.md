@@ -19,6 +19,10 @@ send and receive should be implemented based on the automatic repeat-request (AR
 **getWindowSize** should return the size of current window and **getSSThreshold** should return current value of slow start threshold. **onWindowChange** should be called whenever window size or ssthreshold changes. these three methods will draw slow start and window size per time which helps in assessing congestion control implementation.
 the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented here.
 
+### TCP Server Socket
+Students are asked to complete this class in TCPServerSocketImpl.java, there are two methods in TCPServerSocketImpl that students have to complete: accept and close.<br />
+Server waits on the assigned port for a client to send syn packet, the handshake should be implemented in accept method, the handshake **must** be reliable. If asked on the project instructions, then the server should be able to support Multiplexing/Demultiplexing.
+the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented here.
 
 ## Getting Started
 
