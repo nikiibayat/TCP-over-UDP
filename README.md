@@ -11,6 +11,7 @@ This project will help implementing a TCP protocol using UDP transmission, stude
 ### Enhanced Datagram Socket
 Enhanced Datagram Socket extends JAVA DatagramSocket, therefore, it aquires all the properties and behaviours of its parent. Students must pay attention that they can use all the methods and fields of DatagramSocket that is inherited to Enhanced Datagram Socket, however, they can never use DatagramSocket itself for transmitting data.<br />
 In EnhancedDatagramSocket.java the default value of payload limit, loss rate, delay and the sampling period of sent bytes are adjustable in order to simulate the characteristics of an actual link. Enhanced Datagram Socket sends packets of data based on the loss rate and the delay specified in this file. Simultanously, it plots the bytes of data sent per milliseconds, this way the actual transmission of data can be assessed.
+![BytesPerTime](https://github.com/nikiibayat/TCP-over-UDP/images/BytesPerTime.png "BytesPerTime")
 
 ### TCP Socket
 Students are asked to complete this class in TCPSocketImpl.java, there are five methods in TCPSocketImpl that students have to complete: send, receive, close, getSSThreshold and getWindowSize.<br />
