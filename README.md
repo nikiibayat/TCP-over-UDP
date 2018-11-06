@@ -23,12 +23,12 @@ The **close** method should be implemented as specified in each semester's proje
 
 ### TCP Server Socket
 Students are asked to complete this class in TCPServerSocketImpl.java, there are two methods in TCPServerSocketImpl that students have to complete: accept and close.<br />
-Server waits on the assigned port for a client to send syn packet, handshake should be implemented in accept method and **must** be reliable, also implementing tcp flags for this part is mandatory. If asked on the project instructions, then the server should be able to support Multiplexing and Demultiplexing.<br />
-the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented here.
+Server waits on the assigned port for a client to send syn packet, then TCP 3-Way Handshake begins. Handshake on server side, should be implemented in accept method and **must** be reliable, furthermore implementing essential tcp flags for this part is mandatory. If asked on the project instructions, then the server should be able to support Multiplexing and Demultiplexing.<br />
+the **close** method should be implemented as specified in each semester's project instruction. If asked, then the protocol of closing connection in TCP should be implemented in this method.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+First of all, it is advised that you implement setting up TCP connection between server and client using a reliable TCP 3-Way Handshake, then you can move on to further requirements of the project. 
 
 ### Prerequisites
 
@@ -51,9 +51,8 @@ in Receiver.java:
 tcpSocket.receive("the path in your computer");
 ```
 It is obvious that the server must be running before the client starts establishing the connection, therefore consider this when executing your code.<br />
-First of all, try with loss rate = 0, if the file is received completely, then slightly increase the loss rate  (for example, loss rate = 0.1) this will examine the reliability of your transmission. If your transmission is fast, then you could try increasing the default value of delay.<br />
-
-
+Firstly, try with loss rate = 0, if the file is received completely, then slightly increase the loss rate  (for example, loss rate = 0.1) this will examine the reliability of your transmission. If your transmission is fast, then you could try increasing the default value of delay.<br />
+If your congestion control algorithm is implemented accurately, then the tcp congestion control plot that is drawed after the transmission is one way to evaluate it. 
 
 ## Built With
 
