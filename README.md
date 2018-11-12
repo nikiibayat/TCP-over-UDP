@@ -28,7 +28,9 @@ the **close** method should be implemented as specified in each semester's proje
 
 ## Getting Started
 
-First of all, it is advised that you implement setting up TCP connection between server and client using a reliable TCP 3-Way Handshake, then you can move on to further requirements of the project. 
+First of all, it is advised that you implement setting up TCP connection between server and client using a reliable TCP 3-Way Handshake, then you can move on to further requirements of the project. <br />
+![3-way handshake](https://github.com/nikiibayat/TCP-over-UDP/blob/master/images/handshake.png?raw=true "3-way handshake")<br />
+
 
 ### Prerequisites
 
